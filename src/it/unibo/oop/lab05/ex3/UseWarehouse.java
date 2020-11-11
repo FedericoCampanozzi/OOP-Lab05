@@ -27,11 +27,11 @@ public final class UseWarehouse {
          * them to run the test.
          */
 
-        final Product p1 = null;
-        final Product p2 = null;
-        final Product p3 = null;
+        final Product p1 = new ProductImpl("Sale", 100);
+        final Product p2 = new ProductImpl("Pasta", 30);
+        final Product p3 = new ProductImpl("Pane", 10);
 
-        final Warehouse w = null;
+        final Warehouse w = new WarehouseImpl();
         w.addProduct(p3);
         w.addProduct(p1);
         w.addProduct(p2);
